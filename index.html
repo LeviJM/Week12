@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+</head>
+
+<body class="container">
+    <div>
+
+        <h1>Inventory</h1>
+
+        <form id="myForm">
+        <div>
+            <label for="nameInput">Name:</label>
+            <input type="text" class="formElement" id="nameInput" required>
+        </div>
+        <div>
+            <label for="priceInput">Price:</label>
+            <input type="number" class="formElement" id="priceInput" required>
+        </div>
+        <div>
+            <label for="amountInput">Amount:</label>
+            <input type="number" class="formElement" id="amountInput" required>
+        </div>
+          <button type="submit" class="addButton">Add Item</button>
+        </form>
+        
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Item:</th>
+                    <th>Price:</th>
+                    <th>In Stock:</th>
+                    <th>Options</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+
+            </tbody>
+        </table>
+
+        <div class="editDiv">
+            <form class="row">
+                <div class="col"><h4>Editing:</h4>
+                <p id="currentEdit">Nothing</p></div>
+                <button class="col edit nameBt"><h6>Name</h6></button>
+                <button class="col edit priceBt"><h6>Price</h6></button>
+                <button class="col edit amountBt"><h6>Stock</h6></button>
+            </form>
+            <div class="editName">
+                <form class="row" id="nameForm">
+                    <p class="col">Name:</p>
+                    <input type="text" class="col-6 formElement" placeholder="name" id="nameEdit" required>
+                    <button type="submit" class="col btn btn-success">Update</button>
+                </form>
+            </div>
+            <div class="editPrice">
+                <form class="row">
+                    <input type="text" class="col-10 formElement" placeholder="price" id="priceEdit" required>
+                    <button type="submit" class="col btn btn-success">Update</button>
+                </form>
+            </div>
+            <div class="editAmount">
+                <form class="row">
+                    <input type="text" class="col-10 formElement" placeholder="amount" id="amountEdit" required>
+                    <button type="submit" class="col btn btn-success">Update</button>
+                </form>
+            </div>
+            
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+</body>
+</html>

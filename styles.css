@@ -1,0 +1,54 @@
+
+.container {
+    background-color: rgb(55, 55, 55);
+    color: aliceblue;
+}
+
+h1 {
+    background-color:rgb(0, 0, 125);
+    width: fit-content;
+    border: 15px;
+    border-style: solid;
+    border-color: rgb(0, 0, 125);
+    border-radius: 10px;
+}
+
+#myForm {
+    background-color: rgb(0, 0, 125);
+    color: aliceblue;
+    text-align: center;
+    width: fit-content;
+    border: 15px;
+    border-style: solid;
+    border-color: rgb(0, 0, 125);
+    border-radius: 10px;
+}
+
+th {
+    color: aliceblue;
+}
+
+td {
+    color: aliceblue;
+}
+
+.edit {
+    background-color: hotpink;
+    color: white;
+    border-style: none;
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.edit:hover {
+    background-color: rgb(230, 94, 162);
+}
+
+.editName {
+    margin-top: 15px;
+}
+
+#currentEdit {
+    font-size: large;
+}
